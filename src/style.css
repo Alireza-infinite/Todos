@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Vazirmatn:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-neutral-1: #f2f2f2;
+  --color-neutral-2: #a7a7a7;
+  --color-neutral-3: #878787;
+  --color-neutral-4: #666666;
+  --color-neutral-5: #454545;
+  --color-neutral-6: #242424;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2px;
+  width: 24rem;
+}
+
+li {
+  background-color: var(--color-neutral-1);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+li.done {
+  opacity: 0.6;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 16px;
+}
+
+.date {
+  font-size: 12px;
+  color: var(--color-neutral-5);
+  margin-bottom: 4px;
+}
+
+.todo-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-actions button {
+  padding: 4px 8px;
+  color: White;
+  background-color: hsl(0, 100%, 60%);
+  border: none;
+  border-radius: 4px;
+}
+
+.todo-actions input[type="checkbox"] {
+  width: 24px;
+}
+
+form {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 24rem;
+  border: 1px solid var(--color-neutral-2);
+  padding: 8px 0;
+  border-radius: 8px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  padding: 0 8px;
+}
+
+form input[type="submit"] {
+  margin: 0 8px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: green;
+  padding: 4px 0;
+}
